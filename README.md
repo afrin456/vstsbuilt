@@ -1,7 +1,7 @@
 # Sample Python app for Azure Pipelines docs
 
 For information on how to use this repository, see [Python](https://docs.microsoft.com/azure/devops/pipelines/languages/python).
-
+[![Build Status](https://dev.azure.com/afrinTRN/ex1/_apis/build/status/afrin456.vstsbuilt?branchName=master)](https://dev.azure.com/afrinTRN/ex1/_build/latest?definitionId=1&branchName=master)
 | Example | Build status |
 |---------|--------------|
 | Build (YAML) | [![Build status](https://dev.azure.com/pipelines-docs/docs/_apis/build/status/python-django/python)](https://dev.azure.com/pipelines-docs/docs/_build/latest?definitionId=13) |
