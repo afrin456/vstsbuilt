@@ -48,9 +48,8 @@ steps:
     testRunTitle: 'Python $(PYTHON_VERSION)'
 - script: |
     docker build -t $(dockerId)/$(imageName) .
-    docker login -u $(dockerId) -p $(pswd)
+    docker login -u $(dockerId) -p hello123
     docker push $(dockerId)/$(imageName)
-  env:
-    pswd: hello123
+
 
 - script: docker build -t afrin123/ex .  # add options to this command to meet your needs
