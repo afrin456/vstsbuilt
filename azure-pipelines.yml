@@ -45,4 +45,4 @@ steps:
     testResultsFiles: "**/TEST-*.xml"
     testRunTitle: 'Python $(PYTHON_VERSION)'
     
-- script: docker build -t afrin123/$(imageName) .  # add options to this command to meet your needs
+- script: docker build -t afrin123/ex .  # add options to this command to meet your needs
