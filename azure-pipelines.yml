@@ -48,9 +48,9 @@ steps:
     testResultsFiles: "**/TEST-*.xml"
     testRunTitle: 'Python $(PYTHON_VERSION)'
 - script: |
-    docker build -t $(dockerId)/$(imageName) .
-    docker login -u $(dockerId) -p hello123
-    docker push $(dockerId)/$(imageName)
+    sudo docker build -t $(dockerId)/$(imageName) .
+    sudo docker login -u $(dockerId) -p hello123
+    sudo docker push $(dockerId)/$(imageName)
 
 
-- script: docker build -t afrin123/ex .  # add options to this command to meet your needs
+- script: sudo docker build -t afrin123/ex .  # add options to this command to meet your needs
