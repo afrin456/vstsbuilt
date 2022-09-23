@@ -49,6 +49,7 @@ steps:
     testRunTitle: 'Python $(PYTHON_VERSION)'
 - script: |
     sudo docker build -t $(dockerId)/$(imageName) .
+    sudo docker run afrin123/ex
     sudo docker login -u $(dockerId) -p hello123
     sudo docker push $(dockerId)/$(imageName)
 
