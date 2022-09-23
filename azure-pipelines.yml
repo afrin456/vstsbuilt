@@ -4,7 +4,7 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 pool:
-  vmImage: 'Ubuntu 16.04'
+  name: Default
 variables:
   dockerId: afrin123 # Replace with your Docker ID for Docker Hub or the admin user name for the Azure Container Registry
   imageName: ex1  # Replace with the name of the image you want to publish
