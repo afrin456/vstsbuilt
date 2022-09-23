@@ -54,13 +54,3 @@ steps:
 
 
 - script: docker build -t afrin123/ex .  # add options to this command to meet your needs
-- task: nexusArtifactUpload@0
-  inputs:
-    serverEndpoint: 'nexus'
-    repositoryId: 'maven-releases'
-    groupId: 'helloworld'
-    artifactId: 'helloworld'
-    artifactVersion: '1.0'
-    packaging: 'war'
-    fileName: '*/*.py'
-    classifier: '$(Build.BuildId)'
